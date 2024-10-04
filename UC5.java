@@ -11,7 +11,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class UC5 {
-    static String PASSWORD_REGEX = "^(?=.*[A-Z])(?=.*[0-9])(?=^[^@#$%^&+=]*[@#$%^&+=][^@#$%^&+=]*$).{8,}$\r\n";
+    static String PASSWORD_REGEX = "^(?=.*[A-Z])(?=.*[0-9])(?=^[^@#$%^&+=]*[@#$%^&+=][^@#$%^&+=]*$).{8,}$";
 
     public static boolean isValidPassword(String password) {
         Pattern pattern = Pattern.compile(PASSWORD_REGEX);
